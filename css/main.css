@@ -20,8 +20,14 @@ ul {
 	text-align: center;
 }
 
-/*.btn  {
-	color: red;
-	border-radius: 2px;
-}*/
 /*END CLASS*/
+
+/*BUTTONS*/
+#add-item {
+	margin-left: 1em;
+}
+.delete {
+	margin-left: 1em;
+}
+
+/*testing*/
