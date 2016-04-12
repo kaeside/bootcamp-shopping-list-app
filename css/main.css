@@ -1,0 +1,9 @@
+header {
+	border: dashed blue 3px;
+}
+section {
+	border: solid orange 3px;
+}
+footer {
+	border: dotted black 3px;
+}
