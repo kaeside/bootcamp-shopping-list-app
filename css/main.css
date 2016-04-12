@@ -1,3 +1,4 @@
+/*BEGIN BORDERS FOR VISUAL AIDE*/
 header {
 	border: dashed blue 3px;
 }
@@ -7,3 +8,16 @@ section {
 footer {
 	border: dotted black 3px;
 }
+/*END BORDERS FOR VISUAL AIDE*/
+
+ul {
+	list-style: none;
+}
+
+/*BEGIN CLASSES*/
+
+.text-center {
+	text-align: center;
+}
+
+/*END CLASSES*/
