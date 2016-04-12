@@ -6,7 +6,12 @@ $(document).ready(function () {
         var shoppingItem = userInput.value;
 
         // Append text input variable into list
-        $('.shoppingList').append('<li>' + shoppingItem + '<button class ="btn btn-danger">Delete Item</button></li>');
+        $('#shoppingList').append('<li>' + shoppingItem + '<button class ="btn btn-danger delete">Delete Item</button></li>');
+    });
+
+// Delete list item
+    $('#shoppingList').on("click", ".delete", function() {
+    	$(this).parent().remove() 
     });
 });
 
