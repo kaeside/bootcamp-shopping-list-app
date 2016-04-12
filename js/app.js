@@ -1,16 +1,15 @@
-$(document).ready(function() {
+$(document).ready(function () {
 // Button-click functionality
-$("#add-item").click(function(){
-	var shoppingItem = document.getElementByID('#user-input');
-	alert(shoppingItem);
+    $("#add-item").click(function () {
+        // Put text input into a variable
+        var userInput = document.getElementById('user-input');
+        var shoppingItem = userInput.value;
+
+        // Append text input variable into list
+        $('.shoppingList').append('<li>' + shoppingItem + '</li>');
+    });
 });
 
-// Put text input into a variable
-
-// Append text input variable into list
 
 // Prepend li from list
-});
-
-
 
