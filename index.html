@@ -1,29 +1,34 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Shopping List App</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>Shopping List App</title>
 </head>
 <body>
     <header>
-        <h1 class="content text-center">Kyle and Kaeside's Shopping List</h1>
+        <h1 class="content text-center">grab IT!</h1>
     </header>
+    <section class="cart"> 
+        <div class"cart-image">
+            <img src="images/Shopping-Cart-11.png" alt="shopping cart" class="img-circle">
+        </div>
+    </section>
     <section class="one">
-        <div class="text-center">
-            <input id="user-input" type="text" placeholder="enter list item">
-            <input id="add-item" class="btn btn-success" type="submit" value="Add item">
+        <div class="list-entry text-center">
+            <form id="add-item">
+                <input id="user-input" type="text" placeholder="Enter Item">
+                <input class="btn btn-success" type="submit" value="Add item">
+            </form>
         </div>
     </section>
     <section class="two text-center">
-        <ul id="shoppingList">
-            <li>Milk <button class="btn btn-danger delete">Delete Item</button></li>
-        </ul>
+        <ul id="shoppingList"></ul>
     </section>
     <footer>
-        <h2>This app was created by Kyle and Kaeside, you can see more of our work <a href="#">here</a>.</h2>
+        <p>This app was created by Kaeside Iwuagwu, you can see more of my work <a href="https://github.com/kaeside">HERE</a>.</p>
     </footer>
 
 <script src="http://code.jquery.com/jquery.min.js"></script>
