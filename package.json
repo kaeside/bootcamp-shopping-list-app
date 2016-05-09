@@ -20,7 +20,7 @@
     "watch:css": "npm run build:css && chokidar 'css/**/*.less' -c 'npm run build:css'",
     "clean:css": "rm -f build/$npm_package_name.$npm_package_version.css build/$npm_package_name.$npm_package_version.css.map",
     "build:images": "cp -r images build",
-    "build:js": "cp -r js build && npm run clean:js && webpack",
+    "build:js": "npm run clean:js && webpack",
     "watch:js": "npm run build:js && webpack --watch",
     "clean:js": "rm -f build/$npm_package_name.$npm_package_version.js build/$npm_package_name.$npm_package_version.js.map",
     "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css  && npm run build:images && npm run build:js",
