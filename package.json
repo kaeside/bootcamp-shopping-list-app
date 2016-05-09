@@ -1,30 +1,35 @@
 {
-  "name": "bootcamp-shopping-list-app",
-  "version": "1.0.0",
-  "description": "Shopping List App",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "chokidar-cli": "^1.2.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "mkdir": "mkdir -p build",
-    "build": "npm run clean && npm run mkdir && npm run build:html",
-    "watch": "npm run mkdir && npm run watch:html",
-    "clean": "rm -rf build",
-    "build:html": "npm run clean:html && cp index.html build/",
-    "watch:html": "npm run build:html && chokidar index.html -c 'npm run build:html'",
-    "clean:html": "rm -f build/index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kaeside/bootcamp-shopping-list-app.git"
-  },
-  "author": "Kaeside and Elias",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kaeside/bootcamp-shopping-list-app/issues"
-  },
-  "homepage": "https://github.com/kaeside/bootcamp-shopping-list-app#readme"
+    "name": "bootcamp-shopping-list-app",
+    "version": "1.0.0",
+    "description": "Shopping List App",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "chokidar-cli": "^1.2.0",
+        "less": "^2.7.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "mkdir": "mkdir -p build",
+        "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css",
+        "watch": "npm run watch:html & npm run watch:css",
+        "clean": "rm -rf build",
+        "build:html": "npm run clean:html && cp index.html build/",
+        "watch:html": "npm run build:html && chokidar index.html -c 'npm run build:html'",
+        "clean:html": "rm -f build/index.html",
+        "watch:css": "npm run build:css && chokidar 'css/**/*.less' -c 'npm run build:css'",
+        "clean:css": "rm -f build/$npm_package_name.$npm_package_version.css build/$npm_package_name.$npm_package_version.css.map",
+        "build:css": "npm run clean:css && lessc --source-map css/main.less build/$npm_package_name.$npm_package_version.css"
+
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kaeside/bootcamp-shopping-list-app.git"
+    },
+    "author": "Kaeside and Elias",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kaeside/bootcamp-shopping-list-app/issues"
+    },
+    "homepage": "https://github.com/kaeside/bootcamp-shopping-list-app#readme"
 }
