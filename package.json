@@ -2,7 +2,7 @@
   "name": "bootcamp-shopping-list-app",
   "version": "1.0.0",
   "description": "Shopping List App",
-  "main": "index.js",
+  "main": "js/app.js",
   "dependencies": {},
   "devDependencies": {
     "chokidar-cli": "^1.2.0",
@@ -12,6 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mkdir": "mkdir -p build",
+    "build": "npm run clean && npm run mkdir && npm run build:html && npm run build:css && npm run build:images && npm run build:js",
     "build:html": "npm run clean:html && cp index.html build/",
     "build:css": "npm run clean:css && lessc --source-map css/main.less build/$npm_package_name.$npm_package_version.css",
     "watch:html": "npm run build:html && chokidar index.html -c 'npm run build:html'",

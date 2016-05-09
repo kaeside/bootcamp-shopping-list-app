@@ -11,10 +11,10 @@ $(document).ready(function () {
 
 //SIMPLER "SUBMIT" METHOD
 // Button-click functionality
-    $("#add-item").submit(function (event) {
+    $(".add-item").submit(function (event) {
     	event.preventDefault();
         // Put text input into a variable
-        var shoppingItem = $('#user-input').val();
+        var shoppingItem = $('.user-input').val();
         // var userInput = document.getElementById('user-input');
         // var shoppingItem = userInput.value;
 
@@ -23,8 +23,8 @@ $(document).ready(function () {
         }
         else {
             // Append text input variable into list
-            $('#shoppingList').append('<li>' + shoppingItem + ' ' + '<button class ="btn btn-danger delete">Delete Item</button></li>');
-			$('#user-input').val("");
+            $('.shoppingList').append('<li>' + shoppingItem + ' ' + '<button class ="btn btn-danger delete">Delete Item</button></li>');
+			$('.user-input').val("");
             // userInput.value = '';
 
 
@@ -32,7 +32,7 @@ $(document).ready(function () {
     });
 
 // Delete list item
-    $('#shoppingList').on("click", ".delete", function () {
+    $('.shopping-list').on("click", ".delete", function () {
         $(this).parent().remove();
     });
 });

@@ -1,23 +1,3 @@
-/*COLORS
-- GREEN 200 #A5D6A7
-- GREEN 50 #E8F5E9
-- BOOTSTRAP BUTTON GREEN #5cb85c
-- TEAL 500 @teal
-- PINK 500 #E91E63
-
-END COLORS*/
-/*BEGIN BORDERS FOR VISUAL AIDE*/
-/*header {
-	border: dashed blue 3px;
-}
-section {
-	border: solid orange 3px;
-}
-footer {
-	border: dotted black 3px;
-}*/
-/*END BORDERS FOR VISUAL AIDE*/
-/*BEGIN FONTS*/
 body {
   font-family: "Questrial";
 }
