@@ -12,13 +12,13 @@ $(document).ready(function () {
 //SIMPLER "SUBMIT" METHOD
 // Button-click functionality
     $("#add-item").submit(function (event) {
-    	event.preventDefault()
+    	event.preventDefault();
         // Put text input into a variable
         var shoppingItem = $('#user-input').val();
         // var userInput = document.getElementById('user-input');
         // var shoppingItem = userInput.value;
 
-        if (shoppingItem == '') {
+        if (shoppingItem === '') {
             alert("Please enter an item");
         }
         else {
@@ -33,10 +33,9 @@ $(document).ready(function () {
 
 // Delete list item
     $('#shoppingList').on("click", ".delete", function () {
-        $(this).parent().remove()
+        $(this).parent().remove();
     });
 });
 
 
 // Prepend li from list
-
