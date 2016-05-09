@@ -2,7 +2,7 @@
 - GREEN 200 #A5D6A7
 - GREEN 50 #E8F5E9
 - BOOTSTRAP BUTTON GREEN #5cb85c
-- TEAL 500 #009688
+- TEAL 500 @teal
 - PINK 500 #E91E63
 
 END COLORS*/
@@ -43,7 +43,7 @@ img {
   margin: 0 auto;
   width: 100px;
   height: 100px;
-  border: black solid 2px;
+  border: 50px solid pink;
   padding: .25em;
 }
 /*END CART SECTION*/
