@@ -1,4 +1,5 @@
-$(document).ready(function () {
+/*jshint esversion: 6 */
+$(function () {
     $(".add-item").submit(function (event) {
     	event.preventDefault();
         var shoppingItem = $('.user-input').val();
@@ -7,9 +8,8 @@ $(document).ready(function () {
             alert("Please enter an item");
         }
         else {
-            $('.shopping-list').append('<li>' + shoppingItem + ' ' + '<button class ="btn btn-danger delete">Delete Item</button></li>');
+            $('.shopping-list').append(`<li> ${shoppingItem} <button class ="btn btn-danger delete">Delete Item</button></li>`);
 			$('.user-input').val("");
-
 
         }
     });

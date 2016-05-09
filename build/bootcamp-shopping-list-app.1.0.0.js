@@ -44,19 +44,19 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	$(document).ready(function () {
+	'use strict';
+	
+	/*jshint esversion: 6 */
+	$(function () {
 	    $(".add-item").submit(function (event) {
-	    	event.preventDefault();
+	        event.preventDefault();
 	        var shoppingItem = $('.user-input').val();
 	
 	        if (shoppingItem === '') {
 	            alert("Please enter an item");
-	        }
-	        else {
-	            $('.shopping-list').append('<li>' + shoppingItem + ' ' + '<button class ="btn btn-danger delete">Delete Item</button></li>');
-				$('.user-input').val("");
-	
-	
+	        } else {
+	            $('.shopping-list').append('<li> ' + shoppingItem + ' <button class ="btn btn-danger delete">Delete Item</button></li>');
+	            $('.user-input').val("");
 	        }
 	    });
 	
@@ -64,7 +64,6 @@
 	        $(this).parent().remove();
 	    });
 	});
-
 
 /***/ }
 /******/ ]);
