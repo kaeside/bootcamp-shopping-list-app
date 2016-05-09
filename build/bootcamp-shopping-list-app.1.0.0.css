@@ -6,7 +6,9 @@ ul {
   list-style: none;
 }
 /*BEGIN CLASSES*/
-.text-center {
+.shopping-cart,
+.shopping-list,
+.add-item {
   text-align: center;
 }
 /*END CLASSES*/
