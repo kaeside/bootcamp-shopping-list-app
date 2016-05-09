@@ -7,7 +7,6 @@ ul {
 }
 /*BEGIN CLASSES*/
 .shopping-cart,
-.shopping-list,
 .add-item {
   text-align: center;
 }
@@ -40,8 +39,24 @@ img {
 #add-item {
   margin: 2em;
 }
+.shopping-list {
+  border: 3px solid orange;
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+.shopping-list li {
+  clear: left;
+  border: 5px solid blue;
+}
+.shopping-list li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .delete {
   margin: 1em;
+  float: right;
 }
 /*END BUTTONS*/
 /*BEGIN FOOTER*/

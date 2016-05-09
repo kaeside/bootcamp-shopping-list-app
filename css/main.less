@@ -17,7 +17,7 @@ ul {
 }
 
 /*BEGIN CLASSES*/
-.shopping-cart, .shopping-list, .add-item  {
+.shopping-cart, .add-item  {
 	text-align: center;
 }
 
@@ -57,8 +57,24 @@ img {
 #add-item {
 	margin: 2em;
 }
+.shopping-list {
+	.border(3px, orange);
+	width: 50%;
+	margin: 0 auto;
+	text-align: left;
+	li {
+		clear: left;
+		border: 5px solid blue;
+	&:after {
+	  content:"";
+	  display:block;
+	  clear:both;
+	}
+	}
+}
 .delete {
 	margin: 1em;
+	float: right;
 }
 /*END BUTTONS*/
 

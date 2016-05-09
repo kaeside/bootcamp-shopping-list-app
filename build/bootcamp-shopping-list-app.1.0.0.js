@@ -55,7 +55,7 @@
 	        if (shoppingItem === '') {
 	            alert("Please enter an item");
 	        } else {
-	            $('.shopping-list').append('<li> ' + shoppingItem + ' <button class ="btn btn-danger delete">Delete Item</button></li>');
+	            $('.shopping-list').append('<li> <p>' + shoppingItem + '</p> <button class ="btn btn-danger delete">Delete Item</button></li>');
 	            $('.user-input').val("");
 	        }
 	    });
