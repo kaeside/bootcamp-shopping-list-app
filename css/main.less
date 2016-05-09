@@ -2,7 +2,7 @@
 - GREEN 200 #A5D6A7
 - GREEN 50 #E8F5E9
 - BOOTSTRAP BUTTON GREEN #5cb85c
-- TEAL 500 #009688
+- TEAL 500 @teal
 - PINK 500 #E91E63
 
 END COLORS*/
@@ -22,6 +22,7 @@ footer {
 /*BEGIN FONTS*/
 
 @bootstrapGreen: #5cb85c;
+@teal: #009688;
 
 body {
 	font-family: "Questrial";
@@ -41,7 +42,7 @@ ul {
 
 /*BEGIN HEADER*/
 header h1 {
-	border: solid #5cb85c 2px;
+	border: solid @bootstrapGreen 2px;
 	background-color: @bootstrapGreen;
 	color: white;
 }
@@ -83,7 +84,7 @@ footer {
 	text-align: center;
 	font-size: 1.15em;
 	color: white;
-	background-color: #009688;
+	background-color: @teal;
 }
 
 footer a {
